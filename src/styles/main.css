@@ -7,10 +7,39 @@
 
 html, body {
   background-color: var(--background);
+  font-family: 'Montserrat', sans-serif;
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+/*---------- ESTILOS ENCABEZADO Y ENLACES ----------*/
+
+.encabezado_principal {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.titulo--primaria{
+    background-color: var(--color-tres);
+    padding: 1rem;
+    margin: 15px;
+    border-radius: 15px;
+    color: #ffffff;
+}
+
+.titulo {
+    background-color: var(--color-tres);
+    display: flex;
+    justify-content: center;
+}
+
+.enlaces {
+    background-color: var(--color-tres);
+    margin: 15px;
+    padding: 1rem;
+    border-radius: 15px;
 }
