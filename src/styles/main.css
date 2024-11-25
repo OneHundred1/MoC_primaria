@@ -26,9 +26,12 @@ html, body {
 .encabezado_principal {
     display: grid;
     grid-template-columns: 40% 60%;
+    height: 100px;
 }
 
 .titulo--primaria{
+    display: grid;
+    place-content: center;
     background-color: var(--color-tres);
     padding: 1rem;
     margin: 15px;
@@ -46,7 +49,6 @@ html, body {
 .enlaces {
     background-color: var(--color-tres);
     margin: 15px;
-    padding: 1rem;
     border-radius: 15px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
@@ -67,6 +69,7 @@ html, body {
     z-index: 5;
     text-align: center;
     min-width: 25%;
+    text-decoration: none;
 }
 
 .underline {
@@ -102,10 +105,14 @@ nav .item:nth-child(4):hover ~ .underline {
 .mision--vision {
     display: flex;
     background-color: var(--color-uno);
-    height: 50rem;
+    height: 40rem;
     margin: 1rem;
     border-radius: 1rem;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.mision--vision h1 {
+    font-size: 36px;
 }
 
 .seccion-mv {
@@ -118,12 +125,20 @@ nav .item:nth-child(4):hover ~ .underline {
 }
 
 .contenido-mv {
+    display: grid;
     background-color: var(--color-dos);
     height: 100%;
     width: 100%;
     border-radius: 1rem;
+    padding: 2rem;
 }
 
 .titulo-mv {
     padding-bottom: 10px;
+}
+
+.contenido-mv p {
+    color: #E9EFEC;
+    font-size: 30px;
+    text-align: justify;
 }
